@@ -12,6 +12,10 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        Montserrat: ['Montserrat', 'sans-serif'],
+        Peyda: ['Peyda'],
+      }, //end of fontFamily
     },
     screens: {
 			xl: { max: "1279px" },
