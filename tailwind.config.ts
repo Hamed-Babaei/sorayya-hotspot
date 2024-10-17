@@ -41,7 +41,7 @@ const config: Config = {
 		},
     backgroundImage : {
       'bg-light' : 'url(/backgrounds/bg-desktop.light.jpg)',
-      'bg-dark' :  'url(/backgrounds/bg-desktop-dark.webp)'
+      'bg-dark' :  'url(/backgrounds/bg-desktop-dark.webp)',
     }
   },
   plugins: [],

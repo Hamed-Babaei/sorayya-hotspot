@@ -1,11 +1,21 @@
+import Footer from "@/components/templates/Footer";
+import Navbar from "@/components/templates/Navbar";
+import ThemeProvider from "@/components/ThemeProvider";
 import ThemeToggleButton from "@/components/ThemeToggler";
 import Image from "next/image";
 
-export default function Home() {
+export default function Home({
+  Component,
+  pageProps,
+}: {
+  Component: React.FC;
+  pageProps: any;
+}) {
   return (
-    <>
-      <div className="">
-        <div className="min-h-screen flex flex-col items-center justify-center ">
+    <ThemeProvider attribute="class" defaultTheme="light">
+      <Navbar />
+      <main className="flex-grow min-h-[calc(100vh-48px)] flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center ">
           <div className="p-10 rounded-lg  text-center">
             <Image
               src={"/images/maher-logo.png"}
@@ -30,7 +40,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
-    </>
+      </main>
+      <Footer />
+    </ThemeProvider>
   );
 }
