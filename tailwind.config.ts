@@ -44,6 +44,6 @@ const config: Config = {
       'bg-dark' :  'url(/backgrounds/bg-desktop-dark.webp)',
     }
   },
-  plugins: [],
+  plugins: [require('daisyui')],
 };
 export default config;

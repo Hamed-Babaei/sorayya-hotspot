@@ -36,7 +36,6 @@ export default function Home({
               <button className="bg-black text-white dark:bg-bg-light dark:text-bg-light py-3 rounded-md w-full hover:bg-gray-800 transition-all duration-300 font-semibold text-md">
                 ورود
               </button>
-              <ThemeToggleButton />
             </div>
           </div>
         </div>
