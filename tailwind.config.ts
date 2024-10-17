@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  darkMode: 'class',
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,8 +10,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        text: {
+          light : '#000000',
+          dark : '#ffffff',
+        },
+        bg: {
+          light : "#000000",
+          dark : "#EAEAEA",
+        },
+        primary: '#1e293b', // رنگ اصلی برای حالت روشن
+        secondary: '#64748b', // رنگ دوم برای حالت روشن
       },
       fontFamily: {
         Montserrat: ['Montserrat', 'sans-serif'],
@@ -30,6 +39,10 @@ const config: Config = {
 			sm: { max: "639px" },
 			// => @media (max-width: 639px) { ... }
 		},
+    backgroundImage : {
+      'bg-light' : 'url(/backgrounds/bg-desktop.light.jpg)',
+      'bg-dark' :  'url(/backgrounds/bg-desktop-dark.webp)'
+    }
   },
   plugins: [],
 };
