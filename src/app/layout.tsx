@@ -14,7 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fa" dir="rtl">
-      <body className={`antialiased font-Peyda no-scrollbar`}>
+      <body
+        className={`antialiased font-Peyda no-scrollbar bg-bg-light dark:bg-bg-dark`}
+      >
         <ThemeProvider attribute="class" defaultTheme="light">
           {children}
         </ThemeProvider>
