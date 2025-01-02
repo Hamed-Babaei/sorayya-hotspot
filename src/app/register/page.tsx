@@ -1,7 +1,6 @@
 "use client";
 import { useTheme } from "next-themes";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
 export default function page() {
@@ -35,21 +34,19 @@ export default function page() {
           <div className="flex flex-col items-center mx-auto gap-3 w-full">
             <input
               type="text"
-              placeholder="نام کاربری"
+              placeholder="نام و نام خانوادگی"
               className="p-3 py-4 rounded-lg dark:bg-bg-dark dark:text-text-dark outline-none focus:outline-none w-full sm:max-w-[22.5rem] dark:border dark:border-[#4B4B4B]  "
             />
             <input
               type="text"
-              placeholder="رمز عبور"
+              placeholder="تاریخ تولد(مثال: 1400/01/01)"
               className="p-3 py-4 rounded-lg dark:bg-bg-dark dark:text-text-dark outline-none focus:outline-none w-full sm:max-w-[22.5rem] dark:border dark:border-[#4B4B4B] "
             />
-            <Link
-              href={"/forgot-password"}
-              className="text-sm text-center text-gray-800 font-semibold dark:text-white/80"
-            >
-              رمز عبور خود را فراموش کردید؟
-            </Link>
-
+            <input
+              type="text"
+              placeholder="کدملی"
+              className="p-3 py-4 rounded-lg dark:bg-bg-dark dark:text-text-dark outline-none focus:outline-none w-full sm:max-w-[22.5rem] dark:border dark:border-[#4B4B4B] "
+            />
             <button className="bg-black text-white dark:bg-bg-light dark:text-bg-light py-4 rounded-md w-full hover:bg-gray-800 transition-all duration-300 font-semibold text-xl mt-10">
               تایید
             </button>

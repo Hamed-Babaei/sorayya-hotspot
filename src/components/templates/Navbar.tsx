@@ -1,8 +1,10 @@
 "use client";
 import React from "react";
 import ThemeToggleButton from "../ThemeToggler";
+import { useRouter } from "next/navigation";
 
 export default function Navbar() {
+  const router = useRouter();
   const openModal = () => {
     const modal = document.getElementById("my_modal_2") as HTMLDialogElement;
     if (modal) modal.showModal();
@@ -29,7 +31,7 @@ export default function Navbar() {
             </div>
             <div
               className="w-[3.563rem] h-[3.563rem] bg-white rounded-[0.75rem] border border-[#E8ECF4] flex items-center justify-center cursor-pointer"
-              onClick={openModal}
+              onClick={() => router.back()}
             >
               <img src="/icons/arrow-left.svg" alt="logo" />
             </div>
