@@ -1,6 +1,7 @@
 "use client";
 import { useTheme } from "next-themes";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function Footer() {
@@ -18,11 +19,14 @@ export default function Footer() {
           <span className="h-10 flex items-center">|</span>
         </>
       )}
-      <p className="text-sm text-center text-gray-500 font-semibold dark:text-white/80">
+      <p className="text-sm text-center text-gray-800 font-semibold dark:text-white/80">
         تحقیق و توسعه توسط
-        <span className="text-black font-bold ps-1 dark:text-white">
-          شرکت فناور بنیان ثریا
-        </span>
+        <Link
+          href="https://sorayya.co.com"
+          className="text-black font-bold ps-1 dark:text-white"
+        >
+          &nbsp;شرکت فناور بنیان ثریا
+        </Link>
       </p>
     </div>
   );
